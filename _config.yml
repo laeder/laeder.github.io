@@ -1,1 +1,14 @@
+title: Mikael Asp Somkane's tech blog
+description: This is where I write about programming, Linux and other fun tech stuff
+github:
+  is_project_page: false
 theme: jekyll-theme-hacker
+
+plugins: [jekyll-paginate]
+paginate: 10
+paginate_path: "page:num"
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true

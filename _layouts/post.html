@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<div class="post-author">
+    <small>By {{ page.author | default: site.author }}, {{ page.date | date: "%-d %B %Y" }} in 
+        {% for category in page.categories %}
+            <a href="/categories/{{category}}/">{{category}}</a>
+            {% unless forloop.last %},&nbsp;{% endunless %}
+        {% endfor %}
+    </small>
+</div>
+
+{{content}}
+
