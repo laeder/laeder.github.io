@@ -13,7 +13,7 @@ how I did it.
 [Khal][khal] is terminal based calendar and it can also manage birthdays through contact
 cards.
 
-This is how I set it up. I have have my calendar, one for my daughter and one
+This is how I set it up. I have my calendar, one for my daughter and one
 for birthdays.
 
 This is my config file for Khal:
