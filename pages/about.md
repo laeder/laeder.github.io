@@ -13,4 +13,6 @@ neither shrink nor grow, but they will never go away.
 This blog is a way for me to keep the thoughts away and do something fun and
 hopefully useful for someone else.
 
+Feel free to contact me on Twitter, where I am several times per day.
+
 
