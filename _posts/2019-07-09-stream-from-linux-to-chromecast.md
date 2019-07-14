@@ -3,6 +3,7 @@ layout: post
 author: "Mikael Asp Somkane"
 title:  "Stream from Linux to Chromecast"
 category: [Linux]
+tags: [gnomecast, chromecast]
 ---
 
 I was looking forward to getting VLC 3 so that I would be able to stream to

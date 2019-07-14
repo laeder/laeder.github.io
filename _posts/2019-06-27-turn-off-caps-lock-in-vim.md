@@ -3,6 +3,7 @@ layout: post
 author: "Mikael Asp Somkane"
 title:  "Turn off caps lock when going back to normal in Vim"
 category: [Vim]
+tags: [caps lock]
 ---
 
 Ever forgot to turn off caps lock when you escaped back to normal mode in Vim?

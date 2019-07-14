@@ -3,6 +3,7 @@ layout: post
 author: "Mikael Asp Somkane"
 title:  "New category: Personal"
 category: [Personal]
+tags: [category]
 ---
 
 Today I added the category Personal to be able to write personal updates. In a

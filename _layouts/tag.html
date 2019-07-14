@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<h2>Tag: {{ page.tag }}</h2>
+
+{% for post in site.tags[ page.tag ] %}
+
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+
+    {% unless year == this_year %}
+        {% assign year = this_year %}
+        <h3>{{ year }}</h3>
+    {% endunless %}
+
+    {% unless month == this_month %}
+        {% unless forloop.first %} </ul> {% endunless %}
+        {% assign month = this_month %}
+        <h4>{{ month }}</h4>
+        <ul>
+    {% endunless %}
+
+    <li><span class="category_date">{{ post.date | date: "%d" }}:</span>
+        <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% if forloop.last %} </ul> {% endif %}
+{% endfor %}
+

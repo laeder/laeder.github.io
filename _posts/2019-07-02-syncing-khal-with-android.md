@@ -3,10 +3,11 @@ layout: post
 author: "Mikael Asp Somkane"
 title:  "Syncing Khal with Android"
 category: [Linux]
+tags: [khal, radicale, opensync, vdirsyncer, android]
 ---
 
-[Earlier]({{ site.baseurl }}{% post_url 2019-06-28-wrong-default-locale %}) I promised to show you how to sync Khal with Android and here is
-how I did it.
+[Earlier][locale] I promised to show you how to sync Khal with Android and here
+is how I did it.
 
 ## Khal
 
@@ -239,7 +240,7 @@ sync when you are at a certain SSID to make sure it can reach Radicale on your
 computer. You can also sync manually at any time if you just added something and
 want to make sure you get it before you head out.
 
-
+[locale]: {% post_url 2019-06-28-wrong-default-locale %}
 [khal]: https://github.com/pimutils/khal
 [radicale]: https://radicale.org/
 [opensync]: https://play.google.com/store/apps/details?id=com.deependhulla.opensync&hl=en

@@ -3,6 +3,7 @@ layout: post
 author: "Mikael Asp Somkane"
 title:  "New css for Rouge"
 category: [Jekyll]
+tags: [css, rouge, hightlight]
 ---
 
 I wasn't totally satisfied with the look of code examples so I rewrote and added

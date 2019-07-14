@@ -3,6 +3,7 @@ layout: post
 author: "Mikael Asp Somkane"
 title:  "Wrong default locale"
 category: [Linux]
+tags: [locale]
 ---
 
 After installing Manjaro, a Linux distribution based on Arch, I decided to give

@@ -3,7 +3,7 @@ layout: post
 author: "Mikael Asp Somkane"
 title:  "Add line numbers in Jekyll code examples"
 category: [Jekyll]
-tags: [css]
+tags: [highlight, rouge]
 ---
 
 Sometimes I want to refer to a certain line in a code example and decided to add

@@ -3,6 +3,7 @@ layout: post
 author: "Mikael Asp Somkane"
 title:  "Add a category page in Jekyll"
 category: [Jekyll]
+tags: [category]
 ---
 
 I use categories in my blog posts to collect the posts that belong together, but

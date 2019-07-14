@@ -3,6 +3,7 @@ layout: post
 author: "Mikael Asp Somkane"
 title:  "All is well, sort of"
 category: [Personal]
+tags: [x-ray, cancer, wedding]
 ---
 
 I went to the doctor yesterday to get my results from my lastest x-ray. My brain
