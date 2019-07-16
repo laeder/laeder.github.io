@@ -1,0 +1,35 @@
+---
+layout: default
+permalink: books/
+title: Books
+---
+<h1>Books</h1>
+
+<table class="table-books">
+  {% for book in site.books %}
+    <tr>
+        <td class="book-cover"><img src="{{ book.cover }}" class="img-cover" /></td>
+        <td class="book-data">
+            <h2>{{ book.title }}</h2>
+            <div class="book-detail">
+                <span class="book-label">Author:</span>
+                <span class="book-value">{{ book.author }}</span>
+            </div>
+            <div class="book-detail">
+                <span class="book-label">Genre:</span>
+                <span class="book-value">{{ book.genre }}</span>
+            </div>
+            <div class="book-detail">
+                <span class="book-label">Themes:</span>
+                <span class="book-value">{{ book.themes }}</span>
+            </div>
+            <div class="book-detail">
+                <span class="book-label">Finished:</span>
+                <span class="book-value">{{ book.finished | date: "%B %e, %Y" }}</span>
+            </div>
+            <div class="book-plot">{{ book.plot }}</div>
+            >> <a href="{{ book.url }}">Read more</a>
+        </td>
+    </tr>
+  {% endfor %}
+</table>

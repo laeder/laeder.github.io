@@ -1,0 +1,40 @@
+%table-for-books {
+    td {
+        vertical-align: top;
+    }
+    .book-cover {
+        padding: 0px;
+    }
+    .book-data {
+        padding: 0px 0px 0px 20px;
+        .book-detail {
+            .book-label {
+                color: #99f;
+            }
+        }
+        .book-plot {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.table-books {
+    @extend %table-for-books;
+    .book-cover {
+        width: 15%;
+    }
+    .book-data {
+        width: 85%;
+    }
+}
+
+.table-book {
+    @extend %table-for-books;
+    .book-cover {
+        width: 20%;
+    }
+    .book-data {
+        width: 80%;
+    }
+}

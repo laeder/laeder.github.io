@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<table class="table-book">
+    <tr>
+        <td class="book-cover"><img src="{{ page.cover }}" class="img-cover" /></td>
+        <td class="book-data">
+            <h2>{{ page.title }}</h2>
+            <div class="book-detail">
+                <span class="book-label">Author:</span>
+                <span class="book-value">{{ page.author }}</span>
+            </div>
+            <div class="book-detail">
+                <span class="book-label">Genre:</span>
+                <span class="book-value">{{ page.genre }}</span>
+            </div>
+            <div class="book-detail">
+                <span class="book-label">Themes:</span>
+                <span class="book-value">{{ page.themes }}</span>
+            </div>
+            <div class="book-detail">
+                <span class="book-label">Finished:</span>
+                <span class="book-value">{{ page.finished | date: "%B %e, %Y" }}</span>
+            </div>
+            <div class="book-plot">{{ page.plot }}</div>
+        </td>
+    </tr>
+</table>
+
+{{content}}
+
