@@ -6,7 +6,9 @@ title: Books
 <h1>Books</h1>
 
 <table class="table-books">
-  {% for book in site.books %}
+
+    {% assign sorted = site.books | sort:"finished" | reverse %}
+    {% for book in sorted %}
     <tr>
         <td class="book-cover"><img src="{{ book.cover }}" class="img-cover" /></td>
         <td class="book-data">
@@ -28,7 +30,9 @@ title: Books
                 <span class="book-value">{{ book.finished | date: "%B %e, %Y" }}</span>
             </div>
             <div class="book-plot">{{ book.plot }}</div>
-            >> <a href="{{ book.url }}">Read more</a>
+            <ul>
+                <li><a href="{{ book.url }}">Read more</a></li>
+            </ul>
         </td>
     </tr>
   {% endfor %}
