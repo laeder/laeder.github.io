@@ -5,3 +5,18 @@ a {
 .category_date {
     color: #999999;
 }
+
+%post_hierarky {
+    padding: 3px 5px 3px 5px;
+    border-radius: 7px;
+    background-color: #000;
+}
+.post_category {
+    @extend %post_hierarky;
+    color: #6c0;
+}
+
+.post_tag {
+    @extend %post_hierarky;
+    color: #0cc;
+}

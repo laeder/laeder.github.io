@@ -7,11 +7,11 @@ layout: default
 <div class="post-author">
     <small>By {{ page.author | default: site.author }}, {{ page.date | date: "%-d %B %Y" }} in 
         {% for category in page.categories %}
-            <a href="/categories/{{category}}/">{{category}}</a>{% unless forloop.last %},{% endunless %},
+            <a href="/categories/{{category}}/" class="post_category">{{category}}</a>
         {% endfor %}
         tags: 
         {% for tag in page.tags %}
-            <a href="/tags/{{tag | replace: " ", "_"}}/">{{tag}}</a>{% unless forloop.last %},{% endunless %}
+            <a href="/tags/{{tag | replace: " ", "_"}}/" class="post_tag">{{tag}}</a>
         {% endfor %}
 
     </small>
