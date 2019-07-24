@@ -19,8 +19,8 @@ leave insert mode we have `` stopinsert ``. Since I already use `` updatetime ``
 for caps lock I have to store it somewhere while I'm leaving insert mode and set
 it back again. I set the timeout for insert mode to 5 seconds and tried it. I
 entered insert mode, turned on caps lock and waited. After 5 seconds Vim escaped
-to normal mode and turned off caps lock. This is the snippet of you code to put
-in `` .vimrc ``.
+to normal mode and turned off caps lock. This is the snippet of code to put in
+`` .vimrc ``.
 
 ``` vim
 " automatically leave insert mode after 'updatetime' milliseconds of inaction
