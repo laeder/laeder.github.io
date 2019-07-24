@@ -1,0 +1,15 @@
+body ul li { list-style-image: url("/assets/img//bullet_75.png"); }
+
+body #main_content {
+    h1 { font-size: 30px; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 20px; }
+    h4 { font-size: 16px; }
+    h5 { font-size: 12px; text-transform: uppercase; margin: 0 0 5px 0; }
+    h6 { font-size: 16px;
+         padding: 6px;
+         text-transform: none;
+         color: #3ff;
+         background-color: #000;
+         margin: 0 2px -15px 2px; }
+}

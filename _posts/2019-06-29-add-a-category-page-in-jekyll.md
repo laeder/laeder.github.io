@@ -20,7 +20,7 @@ in `` _layouts `` and maybe you can call it `` category.html ``.
 
 Here is my category layout:
 
-#### category.html
+###### category.html
 
 {% raw %}
 ``` liquid
@@ -70,7 +70,7 @@ just create category files with a script.
 
 This is my Jekyll-category page:
 
-#### jekyll.html
+###### jekyll.html
 
 ``` yaml
 ---
@@ -84,4 +84,9 @@ category parameter is what the category.html layout will use to find the posts.
 So you will need a similar file for all your categories.
 
 
+## Update
+
+[Here][script] I write about the perl script I wrote.
+
+[script]: {% post_url 2019-07-19-perl-script-for-category-and-tag-pages %}
 [brad]: https://bradonomics.com/jekyll-categories/

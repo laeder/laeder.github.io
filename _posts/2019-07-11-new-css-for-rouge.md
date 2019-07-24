@@ -9,7 +9,7 @@ tags: [css, rouge, highlight]
 I wasn't totally satisfied with the look of code examples so I rewrote and added
 some css to `` _rouge.scss ``.
 
-#### _rouge.scss
+###### _rouge.scss
 
 ``` scss
 .highlight {

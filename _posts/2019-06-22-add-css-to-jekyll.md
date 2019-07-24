@@ -18,7 +18,8 @@ The first you create is a partial. A partial is a scss-file that you can compile
 togheter with other partials into one css-file using Jekyll's sass-converter and
 it has no YAML front matter. I just need a few lines of css to adjust the table
 used for code highlightning. 
-### The _sass directory
+
+### The `` _sass `` directory
 
 You place your partials in the directory `` _sass ``. Like me, maybe you just
 need one partial. Partial file names starts with an underscore, my file is called
@@ -28,7 +29,8 @@ moment. If I had som changes for navigation I would add one and name it ``
 _navigation.scss ``.
 
 
-#### _rouge.scss
+###### _rouge.scss
+
 ``` scss
 .highlight {
     table {
@@ -55,14 +57,14 @@ line for every partial you want to include in the css-file. The reason for the
 front matter is for Jekyll to read it and compile it. Otherwise it would just
 skip it.
 
-### The assets/css directory
+### The `` assets/css `` directory
 
 You put your main file in the `` assets/css `` directory and as soon as you save
 it Jekyll will compile it and create a css-file with the same name in ``
 _site/assets/css ``. My theme alredy has a style.css so I named my main file ``
 main.scss `` and the result was `` main.css `` next to style.css.
 
-#### main.scss
+###### main.scss
 ``` scss
 ---
 ---

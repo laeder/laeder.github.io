@@ -19,7 +19,7 @@ for birthdays.
 
 This is my config file for Khal:
 
-#### config
+###### config
 
 ``` conf
 [calendars]
@@ -68,7 +68,7 @@ that directory by hand, not with Khal itself.
 
 A card looks like this:
 
-#### mikael_asp_somkane.vcf
+###### mikael_asp_somkane.vcf
 
 ``` conf
 BEGIN:VCARD
@@ -94,7 +94,7 @@ password.
 
 Config files goes in `` ~/.config/radicale ``.
 
-#### config
+###### config
 
 ``` ini
 [auth]
@@ -112,10 +112,10 @@ filesystem_folder = ~/.var/lib/radicale/collections
 
 Make sure to create the directory `` ~/.var/lib/radicale/collections ``.
 
-#### users
-
 `` users `` is a file with name password pairs. Change it to your name and a
 password of your choice.
+
+###### users
 
 ``` conf
 mikael:*********
@@ -127,7 +127,7 @@ I run Radicale with systemd as a user because it was simpler.
 
 Create the file `` ~/.config/systemd/user/radicale.service ``.
 
-#### radicale.service
+###### radicale.service
 
 ``` ini
 [Unit]
@@ -157,9 +157,9 @@ $ journalctl --user --unit radicale.service
 ## Syncing Khal with Radicale
 
 To sync Khal with Radicale you need to use Vdirsyncer and just like Radicale you
-set up a config file in `` ~/,config/vdirsyncer/ ``.
+set up a config file in `` ~/.config/vdirsyncer/ ``.
 
-#### config
+###### config
 
 ``` ini
 [general]

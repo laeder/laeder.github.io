@@ -89,3 +89,9 @@ the file and restarted the computer and it worked. I don’t know why those line
 where missing since I set them in KDE’s own locale program. Anyway, it works and
 I can use Khal to manage my calendar. Later I will tell you how I sync that
 calendar with the calendar on my phone.
+
+## Update
+
+[Here][sync] I write how to sync Khal with Android.
+
+[sync]: {% post_url 2019-07-02-syncing-khal-with-android %}
