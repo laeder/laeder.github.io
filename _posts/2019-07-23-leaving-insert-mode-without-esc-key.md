@@ -2,6 +2,8 @@
 layout: post
 author: "Mikael Asp Somkane"
 title:  "Leaving insert mode without an escape key"
+sharing:
+    twitter: Leaving insert mode without en escape key
 category: [Vim]
 tags: [esc]
 ---
