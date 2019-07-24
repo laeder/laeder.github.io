@@ -11,7 +11,7 @@ back to normal mode because there's no esc key on the keyboard?
 
 ## CursorHoldI
 
-Someone mentioned this on Twitter and there was a pletora of answers but I was
+Someone mentioned this on Twitter and there was a plethora of answers but I was
 thinking there must be an easier way. I remembered the trick I use for [turning
 off caps lock][capslock] and there should be something similar in insert mode,
 and there is; `` CursorHoldI `` is the same command but in insert mode and to
