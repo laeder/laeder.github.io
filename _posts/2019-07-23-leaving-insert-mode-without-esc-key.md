@@ -8,8 +8,8 @@ category: [Vim]
 tags: [esc]
 ---
 
-Do you work on an iPad or other device and suddenly realised that you can't go
-back to normal mode because there's no esc key on the keyboard?
+Have you worked on an iPad or other device and suddenly realised that you can't
+go back to normal mode because there's no esc key on the keyboard?
 
 ## CursorHoldI
 
@@ -18,11 +18,11 @@ thinking there must be an easier way. I remembered the trick I use for [turning
 off caps lock][capslock] and there should be something similar in insert mode,
 and there is; `` CursorHoldI `` is the same command but in insert mode and to
 leave insert mode we have `` stopinsert ``. Since I already use `` updatetime ``
-for caps lock I have to store it somewhere while I'm leaving insert mode and set
-it back again. I set the timeout for insert mode to 5 seconds and tried it. I
-entered insert mode, turned on caps lock and waited. After 5 seconds Vim escaped
-to normal mode and turned off caps lock. This is the snippet of code to put in
-`` .vimrc ``.
+for caps lock I have to store it somewhere while I'm in insert mode and set it
+back again when leaving. I set the timeout for insert mode to 5 seconds and
+tried it. I entered insert mode, turned on caps lock and waited. After 5 seconds
+Vim escaped to normal mode and turned off caps lock. This is the snippet of code
+to put in `` .vimrc ``.
 
 ``` vim
 " automatically leave insert mode after 'updatetime' milliseconds of inaction
