@@ -1,0 +1,17 @@
+---
+layout: default
+permalink: tagcloud/
+title: Tag Cloud
+---
+
+<h1>Tag Cloud</h1>
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+    <span class="site-tag">
+        <a href="/tags/{{ tag | first | replace:' ', '_' }}/"
+           style="font-size: {{ tag | last | size  |  times: 3 | plus: 13  }}px">
+                 {{ tag[0] }}
+        </a>
+        {% unless forloop.last %}&middot;{% endunless %}
+    </span>
+{% endfor %}

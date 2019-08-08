@@ -19,12 +19,11 @@
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
         <span style="float: right"><a href="/about/">About me</a></span>
-        <a href="/index.html">Home</a> ::
-        <a href="/categories/Jekyll/">Jekyll</a> ::
-        <a href="/categories/Vim/">Vim</a> ::
-        <a href="/categories/Linux/">Linux</a> ::
-        <a href="/categories/Personal/">Personal</a> ::
-        <a href="/books/">Books</a>
+
+        {% for mitem in site.data.menu %}
+            <a href="{{ mitem.link }}">{{ mitem.item }}</a>
+            {% unless forloop.last %}::{% endunless %}
+        {% endfor %}
 
       </div>
     </header>
