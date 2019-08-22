@@ -1,0 +1,30 @@
+---
+layout: default
+permalink: guitarists/
+title: Guitarists
+---
+<h1>Guitarists</h1>
+
+<table class="table-books">
+
+    {% assign sorted = site.guitarists | sort:"name" %}
+    {% for guitarist in sorted %}
+    <tr>
+        <td class="book-cover"><img src="{{ guitarist.picture }}" class="img-cover" /></td>
+        <td class="book-data">
+            <h2>{{ guitarist.name }}</h2>
+            <div class="book-detail">
+                <span class="book-label">Genre:</span>
+                <span class="book-value">{{ guitarist.genre }}</span>
+            </div>
+            <div class="book-detail">
+                <span class="book-label">Bands:</span>
+                <span class="book-value">{{ guitarist.bands }}</span>
+            </div>
+            <ul>
+                <li><a href="{{ guitarist.url }}">Read more</a></li>
+            </ul>
+        </td>
+    </tr>
+    {% endfor %}
+</table>

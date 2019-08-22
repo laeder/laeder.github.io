@@ -16,3 +16,5 @@ kramdown:
 collections:
     books:
         output: true
+    guitarists:
+        output: true

@@ -13,3 +13,26 @@ body #main_content {
          background-color: #000;
          margin: 0 2px -15px 2px; }
 }
+
+#index_table {
+    td {
+        vertical-align: top;
+    }
+    #index_posts {
+        padding: 0 15px 0 0;
+        width: 78%;
+        border-right: 1px dashed #b5e853;
+    }
+    #index_other {
+        padding: 0 0 0 15px;
+        width: 22%;
+        h4 {
+            margin-bottom: 5px;
+        }
+        img {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+

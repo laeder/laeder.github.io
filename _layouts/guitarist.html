@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<table class="table-book">
+    <tr>
+        <td class="book-cover"><img src="{{ page.picture }}" class="img-cover" /></td>
+        <td class="book-data">
+            <h2>{{ page.name }}</h2>
+            <div class="book-detail">
+                <span class="book-label">Genre:</span>
+                <span class="book-value">{{ page.genre }}</span>
+            </div>
+            <div class="book-detail">
+                <span class="book-label">Bands:</span>
+                <span class="book-value">{{ page.bands }}</span>
+            </div>
+        </td>
+    </tr>
+</table>
+
+{{content}}
+
+
+<ul>
+    <li><a href="/guitarists">View all guitarists</a></li>
+</ul>

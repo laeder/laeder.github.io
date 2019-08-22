@@ -2,6 +2,10 @@
 layout: default
 title: Home
 ---
+
+<table id="index_table">
+    <td id="index_posts">
+
 <h1>Latest Posts</h1>
 
 <ul>
@@ -46,3 +50,25 @@ title: Home
         {% endif %}
     </div>
 {% endif %}
+
+    </td>
+    <td id="index_other">
+        <h4>Guitarist of the week</h4>
+
+        {% assign sorted_g = site.guitarists | sort:"week" | reverse %}
+        {% for guitarist in sorted_g limit:1 %}
+            <div><a href="{{ guitarist.url }}">{{ guitarist.name }}</a></div>
+            <div><a href="{{ guitarist.url }}"><img src="{{ guitarist.picture }}" class="img-cover" /></a></div>
+        {% endfor %}
+
+        <h4>Latest book</h4>
+
+        {% assign sorted_b = site.books | sort:"finished" | reverse %}
+        {% for book in sorted_b limit:1 %}
+            <div>{{ book.author }}</div>
+            <div><a href="{{ book.url }}">{{ book.title }}</a></div>
+            <div><a href="{{ book.url }}"><img src="{{ book.cover }}" class="img-cover" /></a></div>
+        {% endfor %}
+    </td>
+</table>
+    

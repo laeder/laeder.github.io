@@ -16,4 +16,4 @@ to this book I now know the meaning of the word dandruff ;)
 
 I really liked this book. It's funny, romantic, geeky and heart warming. As a
 programmer I feel at home in this company. I also feel with the father that lost
-his job and his feeling of losing his meaning.
+his job and his feeling of losing his purpose.
