@@ -1,5 +1,6 @@
 ---
 layout: guitarist
+title: David Gilmour
 name: David Gilmour
 bands: Pink Floyd, solo
 genre: Progressive rock

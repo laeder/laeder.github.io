@@ -21,6 +21,18 @@
 
 .table-books {
     @extend %table-for-books;
+    tr.first {
+        td { border-top: 0px; }
+        .book-cover { padding: 0px 0px 20px 0px; }
+        .book-data { padding: 0px 0px 0px 20px; }
+    }
+
+    tr.notfirst {
+        td { border-top: 1px solid #999999; }
+        .book-cover { padding: 20px 0px 20px 0px; }
+        .book-data { padding: 20px 0px 0px 20px; }
+    }
+
     .book-cover {
         width: 15%;
     }

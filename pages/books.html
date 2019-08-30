@@ -5,11 +5,11 @@ title: Books
 ---
 <h1>Books</h1>
 
-<table class="table-books">
+<table class="table-books" cellspacing="0">
 
     {% assign sorted = site.books | sort:"finished" | reverse %}
     {% for book in sorted %}
-    <tr>
+    <tr class="{% if forloop.first %}first{% else %}notfirst{% endif %}">
         <td class="book-cover"><img src="{{ book.cover }}" class="img-cover" /></td>
         <td class="book-data">
             <h2>{{ book.title }}</h2>

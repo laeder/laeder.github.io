@@ -5,11 +5,11 @@ title: Guitarists
 ---
 <h1>Guitarists</h1>
 
-<table class="table-books">
+<table class="table-books" cellspacing="0">
 
     {% assign sorted = site.guitarists | sort:"name" %}
     {% for guitarist in sorted %}
-    <tr>
+    <tr class="{% if forloop.first %}first{% else %}notfirst{% endif %}">
         <td class="book-cover"><img src="{{ guitarist.picture }}" class="img-cover" /></td>
         <td class="book-data">
             <h2>{{ guitarist.name }}</h2>
